@@ -1,0 +1,46 @@
+.cards {
+  display: grid;
+}
+
+.card { 
+  max-height: 200px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  display: flex;
+  block-size: fit-content;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.home-nav {
+  background-color: black;
+  color: white;
+  display: flexbox;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.srch {
+  float: right;
+}
+
+.txt {
+  float: right;
+  margin-right: 30px;
+  width: 400px;
+}
+
+.navlink {
+  margin-right: 40px;
+  font-size: larger;
+  margin-top: auto;
+
+}
+
+.sign {
+  justify-content: center;
+  margin-top: 300px;
+  margin-left: 500px;
+}
+
