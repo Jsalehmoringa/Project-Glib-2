@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Dashboard from '../GLib/Dashboard';
 import Homepage from '../GLib/Homepage';
 import Logout from '../GLib/Logoutpage';
-import Navbar from '../GLib/Navbar';
 import Loginpage from '../GLib/Loginpage';
 import MyLibrary from '../GLib/MyLibrary';
+import Dashboard from '../GLib/Dashboard';
+
 
 function App() {
   
@@ -35,13 +35,12 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar searchQuery={searchQuery}/>
       <Routes>
         <Route exact path="/" element={<Homepage/>}></Route>
-        <Route exact path="/dashboard" element={<Dashboard props={results} createLib={createLib}/>}></Route>
+        <Route exact path="/dashboard" element={<Dashboard createLib={createLib} props={results} searchQuery={searchQuery} />}></Route>
         <Route exact path="/login" element={<Loginpage/>}></Route>
-        <Route exact path="/logout" element={<Logout/>}></Route>
-        <Route exact path="/mylibrary" element={<MyLibrary props={addbook}/>}></Route>
+        <Route exact path="/dashboard/logout" element={<Logout/>}></Route>
+        <Route exact path="/dashboard/mylibrary" element={<MyLibrary props={addbook}/>}></Route>
       </Routes>
     </div>
 

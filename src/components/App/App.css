@@ -44,3 +44,20 @@
   margin-left: 500px;
 }
 
+.nav-home {
+  background-color: green;
+  height: 50px;
+}
+
+.nav-home a {
+  font-size: x-large;
+  color: #00fff2;
+  background-color: blue;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.home-info {
+  font-size: x-large;
+}

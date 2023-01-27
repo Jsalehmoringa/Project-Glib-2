@@ -5,7 +5,7 @@ function Logout() {
 
     return (
      <div>
-        
+        <Homepage/>
      </div>
     )
 }
