@@ -3,7 +3,7 @@
 }
 
 .card { 
-  max-height: 200px;
+  max-height: 220px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   display: flex;
@@ -21,21 +21,43 @@
   height: 50px;
 }
 
-.srch {
+.top-form {
   float: right;
 }
 
-.txt {
+.top-form input {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 12px;
+  border: none;
+  width: 300px;
+}
+
+.top-form button {
   float: right;
-  margin-right: 30px;
-  width: 400px;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  width: 80px;
+}
+
+.top-form button:hover {
+  background: rgba(221, 221, 221, 0.411);
 }
 
 .navlink {
   margin-right: 40px;
-  font-size: larger;
   margin-top: auto;
-
+  justify-content: space-between;
+  font-size: x-large;
+  color: green;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-left: 30px;
 }
 
 .sign {
@@ -45,19 +67,42 @@
 }
 
 .nav-home {
-  background-color: green;
+  background-color: rgba(17, 0, 255, 0.658);
   height: 50px;
 }
 
 .nav-home a {
   font-size: x-large;
-  color: #00fff2;
-  background-color: blue;
-  padding: 5px 10px;
+  color: red;
+  background-color: rgb(127, 255, 185);
+  padding: 5px 5px;
   text-decoration: none;
   margin-left: 30px;
+  padding-top: 10px;
 }
 
-.home-info {
-  font-size: x-large;
+.overlay {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 50px;
+  font-size: xx-large;
+  color: white;
+}
+
+.sign {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 100%;
+  font-size: xx-large;
+  color: white;
+  justify-content: center;
+}
+
+.card-image {
+  width: 130px;
 }

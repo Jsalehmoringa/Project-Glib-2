@@ -9,17 +9,6 @@ function Loginpage() {
     const [user, setUser] =useState({});
     const navigate =useNavigate();
 
-
-  // function handleSignOut(e) {
-  //   setUser({})
-  //   google.accounts.id.disableAutoSelect()
-  //   if(setUser({})) {
-  //     return (
-  //       <Homepage/>
-  //     )
-  //   }
-  // }
-
   function handleCallbackResponse(response) {
     var userObj = jwtDecode(response.credential)
     setUser(userObj)
@@ -39,9 +28,9 @@ function Loginpage() {
   
     google.accounts.id.renderButton(
       document.getElementById("signinDiv"),
-      { size: "large", width: 500, height: 300, theme: "filled_blue", text: "signup_with" },
+      { size: "large", width: 500, height: 500, theme: "filled_blue", text: "signup_with" },
   )   
-}, [])
+})
 
     return (
         <div className="sign">

@@ -3,7 +3,7 @@ import React from "react";
 function MyLibrary({ props }) {
     return (
         <div className="cards">
-            <h1> My Bookshelf</h1>
+            <h1> My Bookshelf: </h1>
             {props.map((prop) => 
                 <div className="card" key={prop.id}>
                     <img className="card-image" src={prop.volumeInfo.imageLinks.smallThumbnail} alt="..."></img>

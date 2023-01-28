@@ -1,13 +1,10 @@
 import React from "react";
 import Homepage from "./Homepage";
 
-function Logout() {
-
+function Logoutpage() {
     return (
-     <div>
         <Homepage/>
-     </div>
     )
 }
 
-export default Logout;
+export default Logoutpage
